@@ -502,6 +502,10 @@ header {
     background-image: url(../img/pr--ux.png);
 }
 
+.pr--gamebets {
+    background-image: url(../img/pr--gamebets.png);
+}
+
 /* ------------------------------------------------------------------------------------------------------------- */
 /* BUTTONS */
 /* ------------------------------------------------------------------------------------------------------------- */
@@ -528,18 +532,6 @@ header {
     margin-right: 15px;
 }
 
-.btn-private:link,
-.btn-private:visited  {
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    background-color: #c0392b;
-    border: 1px solid #c0392b;
-    margin-right: 15px;
-    pointer-events: none;
-    cursor: default;
-}
-
 .btn-demo:link,
 .btn-demo:visited {
     position: absolute;
@@ -547,7 +539,14 @@ header {
     right: 10%;
     background-color: #155799;
     border: 1px solid #155799;
+}
 
+.btn-private:link,
+.btn-private:visited  {
+    background-color: #c0392b;
+    border: 1px solid #c0392b;
+    pointer-events: none;
+    cursor: default;
 }
 
 .btn-code:active,
