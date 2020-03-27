@@ -23,6 +23,10 @@
         font-size: 18px;
     }
 
+    .header-menu {
+        transform: scale(0.8);
+    }
+
     section {
         padding: 60px 0;
     }
@@ -108,10 +112,6 @@
 
     .contact-box-right {
         text-align: center;
-    }
-
-    .header-menu {
-        transform: scale(0.8);
     }
 
     section {

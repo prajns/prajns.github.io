@@ -227,7 +227,7 @@ header {
     margin-right: 0;
 }
 
-.header-box .col-lg-7 a:nth-of-type(2) {
+.header-box .col-lg-7 a:nth-of-type(2), .header-box .col-lg-7 a:nth-of-type(4) {
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -494,6 +494,10 @@ header {
     background-image: url(../img/pr--wbmm.png);
 }
 
+.pr--ftfw {
+    background-image: url(../img/pr--ftfw.png);
+}
+
 .pr--mbtournament {
     background-image: url(../img/pr--mbtournament.png);
 }
@@ -664,4 +668,9 @@ footer a:visited {
 .link__gitlab:hover,
 .link__gitlab:active {
     color: #d35400;
+}
+
+.link__bitbucket:hover,
+.link__bitbucket:active {
+    color: #2684FF;
 }
