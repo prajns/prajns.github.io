@@ -10,9 +10,8 @@
 html,body {
     background-color: white;
     color: #444;
-    font-family: 'Lato', 'Arial', sans-serif;
-    font-size: 20px;
-    font-weight: 300;
+    font-family: 'Quicksand','Arial', sans-serif;
+    font-size: 21px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
@@ -59,7 +58,7 @@ section:nth-of-type(even) {
 /* ------------------------------------------------------------------------------------------------------------- */
 
 h1, h2, h3 {
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;    
 }
 
@@ -74,7 +73,7 @@ header h1 {
 
 section h2 {
     font-size: 180%;
-    font-weight: 400;
+    font-weight: 500;
     word-spacing: 6px;
     color: #333;
     text-align: center;
@@ -99,10 +98,10 @@ h3 {
 /* ------------------------------------------------------------------------------------------------------------- */
 
 .long-read {
-    line-height: 145%;
-    width: 70%;
-    margin-left: 15%;
-    margin-bottom: 10px;
+    line-height: 150%;
+    width: 64%;
+    margin-left: 18%;
+    margin-bottom: 20px;
     text-align: center;
     color: #444;
 }
@@ -231,6 +230,30 @@ header {
     margin-right: 10px;
 }
 
+.header-box h2 {
+    font-size: 160%;
+    font-weight: 400;
+    overflow: hidden;
+    display: inline-block;
+    border-right: .06em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .10em;
+    animation: 
+        typing 3s steps(20, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 473px }
+}
+  
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+
 /* HEADER RHOMBUS MENU */
 
 .header-menu {
@@ -334,7 +357,7 @@ header {
 
 .header-menu-list-item-body span {
     text-transform: uppercase;
-    font-size: 60%;
+    font-size: 65%;
 }
 
 /* ------------------------------------------------------------------------------------------------------------- */

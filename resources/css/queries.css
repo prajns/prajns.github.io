@@ -38,6 +38,11 @@
     .section-skills ul {
         margin-bottom: 40px;
     }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 405px }
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -96,6 +101,11 @@
 
     h2 {
         font-size: 150%;
+    }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 360px }
     }
 }
 
