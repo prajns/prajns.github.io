@@ -127,4 +127,13 @@
     section {
         padding: 25px 0;
     }
+
+    .header-box h2 {
+        font-size: 140%;
+    }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 315px }
+    }
 }

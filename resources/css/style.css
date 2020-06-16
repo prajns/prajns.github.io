@@ -11,7 +11,7 @@ html,body {
     background-color: white;
     color: #444;
     font-family: 'Quicksand','Arial', sans-serif;
-    font-size: 21px;
+    font-size: 20px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
@@ -99,8 +99,8 @@ h3 {
 
 .long-read {
     line-height: 150%;
-    width: 64%;
-    margin-left: 18%;
+    width: 70%;
+    margin-left: 15%;
     margin-bottom: 20px;
     text-align: center;
     color: #444;
@@ -246,12 +246,16 @@ header {
 
 @keyframes typing {
     from { width: 0 }
-    to { width: 473px }
+    to { width: 450px }
 }
   
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: white; }
+}
+
+.header-info a {
+    font-size: 140%;
 }
 
 /* HEADER RHOMBUS MENU */
