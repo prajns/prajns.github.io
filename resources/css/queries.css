@@ -3,12 +3,6 @@
         width: 900px;
     }
 
-    .long-read {
-        line-height: 145%;
-        width: 80%;
-        margin-left: 10%;
-    }
-
     .main-nav {
         margin-right: 20px;
     }
@@ -31,12 +25,33 @@
         padding: 60px 0;
     }
 
-    .section-skills h3 {
-        margin-bottom: 10px;
+    .section-skills .col-square-skills .square-point {
+        width: 150px;
+        height: 150px;
     }
 
-    .section-skills ul {
-        margin-bottom: 40px;
+    .section-skills .progress .progress-bar-label span {
+        font-size: 100%;
+    }
+
+    .card-body .card-title {
+        font-size: 130%;
+        margin-bottom: 0.25rem;
+    }
+    
+    .card-body .card-subtitle {
+        font-size: 110%;
+        color: #159957;
+        margin-bottom: 0.5rem;
+    }
+    
+    .card-body .card-text {
+        font-size: 110%;
+    }
+
+    @-webkit-keyframes typing {
+        from { width: 0 }
+        to { width: 405px }
     }
 
     @keyframes typing {
@@ -76,9 +91,16 @@
         font-size: 100%;
     }
     
+    .section-about h2::after {
+        margin-bottom: 30px;
+    }
+
+    .section-skills .progress .progress-bar-label span {
+        font-size: 100%;
+    }
+
     .sticky .main-nav {
         margin-top: 10px;
-        
     }
     
     .sticky .main-nav li a:link,
@@ -90,9 +112,16 @@
         margin: 15px;
     }
 
-    .long-read {
-        width: 80%;
-        margin-left: 10%;
+    .col-square {
+        display: none;
+    }
+
+    .section-about p {
+        text-align: center;
+    }
+
+    .section-about .row {
+        margin-top: 20px;
     }
 
     h1 {
@@ -101,6 +130,11 @@
 
     h2 {
         font-size: 150%;
+    }
+
+    @-webkit-keyframes typing {
+        from { width: 0 }
+        to { width: 360px }
     }
 
     @keyframes typing {
@@ -130,6 +164,11 @@
 
     .header-box h2 {
         font-size: 140%;
+    }
+
+    @-webkit-keyframes typing {
+        from { width: 0 }
+        to { width: 315px }
     }
 
     @keyframes typing {

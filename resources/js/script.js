@@ -29,6 +29,162 @@ $(document).ready(function() {
         });
     });
 
+    $(".card").mouseenter(function() {
+
+        $( this ).find('.card-img-top').addClass('animate__zoomOut').attr('src', 'resources/img/pr--dark.png');
+        $( this ).find('.card-body').css('display', 'flex').removeClass('animate__zoomOut').addClass('animate__zoomIn');
+
+    }).mouseleave(function() {
+        $( this ).find('.card-body').addClass('animate__zoomOut');
+        const image = $(this).attr('data-project');
+        $( this ).find('.card-img-top').attr('src', `resources/img/${image}.jpg`).removeClass('animate__zoomOut').addClass('animate__zoomIn');
+
+    });
+
+    $('[data-toggle="tooltip"]').tooltip();
+
+    /* Animations on scroll */
+    $('.js--wp-0a').waypoint(function(direction) {
+        $('.js--wp-0a').addClass('animate__animated animate__fadeInLeft');
+    }, {
+        offset: '70%'
+    });
+    $('.js--wp-0b').waypoint(function(direction) {
+        $('.js--wp-0b').addClass('animate__animated animate__fadeInRightBig');
+    }, {
+        offset: '70%'
+    });
+
+    $('.js--wp-1a').waypoint(function(direction) {
+        $('.js--wp-1a').addClass('animate__animated animate__fadeIn');
+    }, {
+        offset: '65%'
+    });
+
+    $('.js--wp-1b').waypoint(function(direction) {
+        $('.js--wp-1b').addClass('animate__animated animate__fadeInRight');
+    }, {
+        offset: '65%'
+    });
+
+    $('.js--wp-2a').waypoint(function(direction) {
+        $('.js--wp-2a').addClass('animate__animated animate__fadeInLeft');
+    }, {
+        offset: '68%'
+    });
+
+    $('.js--wp-2b').waypoint(function(direction) {
+        $('.js--wp-2b').addClass('animate__animated animate__fadeIn');
+    }, {
+        offset: '68%'
+    });
+
+    $('.js--wp-3a').waypoint(function(direction) {
+        $('.js--wp-3a').addClass('animate__animated animate__fadeIn');
+    }, {
+        offset: '65%'
+    });
+
+    $('.js--wp-3b').waypoint(function(direction) {
+        $('.js--wp-3b').addClass('animate__animated animate__fadeInRight');
+    }, {
+        offset: '65%'
+    });
+
+    $('.js--wp-4a').waypoint(function(direction) {
+        $('.js--wp-4a').addClass('animate__animated animate__fadeInRight');
+    }, {
+        offset: '60%'
+    });
+
+    $('.js--wp-4b').waypoint(function(direction) {
+        $('.js--wp-4b').addClass('animate__animated animate__fadeInLeftBig');
+    }, {
+        offset: '60%'
+    });
+
+    $('.js--wp-5').waypoint(function(direction) {
+        $('.js--wp-5').addClass('animate__animated animate__fadeIn');
+    }, {
+        offset: '50%'
+    });
+
+    $('.js--wp-5a').waypoint(function(direction) {
+        $('.progress-bar-label span').addClass('animate__animated animate__fadeIn');
+        $('.progress-bar-js').width('50%');
+        $('.progress-bar-html').width('55%');
+        $('.progress-bar-css').width('60%');
+        $('.progress-bar-angular').width('30%');
+        $('.progress-bar-bootstrap').width('62%');
+        $('.progress-bar-mysql').width('55%');
+        $('.progress-bar-nodejs').width('20%');
+        $('.progress-bar-git').width('30%');
+        $('.progress-bar-ux').width('45%');
+        $('.progress-bar-ps').width('50%');
+        $('.progress-bar-il').width('35%');
+    }, {
+        offset: '55%'
+    });
+
+    $('.js--wp-5b').waypoint(function(direction) {
+        $('.js--wp-5b').addClass('animate__animated animate__fadeInRight');
+    }, {
+        offset: '60%'
+    });
+
+    $('.js--wp-6a').waypoint(function(direction) {
+        $('.js--wp-6a').addClass('animate__animated animate__fadeInLeft');
+    }, {
+        offset: '70%'
+    });
+
+    $('.js--wp-6b').waypoint(function(direction) {
+        $('.js--wp-6b').addClass('animate__animated animate__fadeInRightBig');
+    }, {
+        offset: '75%'
+    });
+
+    $('.js--wp-7a').waypoint(function(direction) {
+        $('.js--wp-7a').addClass('animate__animated animate__slideInUp');
+    }, {
+        offset: '70%'
+    });
+
+    $('.js--wp-7b').waypoint(function(direction) {
+        $('.js--wp-7b').addClass('animate__animated animate__slideInUp');
+    }, {
+        offset: '71%'
+    });
+
+    $('.js--wp-7c').waypoint(function(direction) {
+        $('.js--wp-7c').addClass('animate__animated animate__slideInUp');
+    }, {
+        offset: '72%'
+    });
+
+    $('.js--wp-9a').waypoint(function(direction) {
+        $('.js--wp-9a').addClass('animate__animated animate__fadeInRight');
+    }, {
+        offset: '80%'
+    });
+
+    $('.js--wp-9b').waypoint(function(direction) {
+        $('.js--wp-9b').addClass('animate__animated animate__fadeInLeftBig');
+    }, {
+        offset: '80%'
+    });
+
+    $('.js--wp-10').waypoint(function(direction) {
+        $('.js--wp-10').addClass('animate__animated animate__fadeInLeft');
+    }, {
+        offset: '78%'
+    });
+
+    $('.js--wp-11').waypoint(function(direction) {
+        $('.js--wp-11').addClass('animate__animated animate__fadeIn');
+    }, {
+        offset: '78%'
+    });
 
     $('.js--nav-icon').click(function() {
         var nav = $('.js--main-nav');
@@ -44,5 +200,10 @@ $(document).ready(function() {
             icon.removeClass('fa-angle-up');
         }        
     });
+
+    $( '.progress' ).hover(function() {
+        const logo = $(this).attr('data-logo');
+        $( '#skill-image' ).css('background-image', `url('resources/img/logos/${logo}.svg')`);
+      });
 
 });
