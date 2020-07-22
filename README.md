@@ -9,11 +9,11 @@ Page with my portfolio written in HTML, CSS (Custom + Bootstrap) and jQuery.
 
 * HTML
 * CSS
-* [Animate.CSS](https://daneden.github.io/animate.css/) - Animations
-* [jQuery Waypoints](http://imakewebthings.com/waypoints/) - Scroll handling
-* [jQuery](https://jquery.com/) - In addition for Waypoints
-* [Font Awesome](https://fontawesome.com/) - Icons
-* [Bootstrap](https://getbootstrap.com/) - Stylize and responsive CSS
+* [Animate.css](https://daneden.github.io/animate.css/)
+* [jQuery Waypoints](http://imakewebthings.com/waypoints/)
+* [jQuery](https://jquery.com/)
+* [Ionicons](https://ionicons.com/)
+* [Bootstrap 4](https://getbootstrap.com/)
 
 ## Author
 

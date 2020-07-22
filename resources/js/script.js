@@ -31,13 +31,13 @@ $(document).ready(function() {
 
     $(".card").mouseenter(function() {
 
-        $( this ).find('.card-img-top').addClass('animate__zoomOut').attr('src', 'resources/img/pr--dark.png');
-        $( this ).find('.card-body').css('display', 'flex').removeClass('animate__zoomOut').addClass('animate__zoomIn');
+        $( this ).find('.card-img-top').addClass('animate__zoomOut');
+        $( this ).find('.card-body').removeClass('animate__zoomOut').addClass('animate__zoomIn').css('display', 'flex');
 
     }).mouseleave(function() {
         $( this ).find('.card-body').addClass('animate__zoomOut');
-        const image = $(this).attr('data-project');
-        $( this ).find('.card-img-top').attr('src', `resources/img/${image}.jpg`).removeClass('animate__zoomOut').addClass('animate__zoomIn');
+
+        $( this ).find('.card-img-top').removeClass('animate__zoomOut').addClass('animate__zoomIn');
 
     });
 
