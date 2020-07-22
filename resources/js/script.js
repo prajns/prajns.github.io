@@ -111,17 +111,19 @@ $(document).ready(function() {
 
     $('.js--wp-5a').waypoint(function(direction) {
         $('.progress-bar-label span').addClass('animate__animated animate__fadeIn');
-        $('.progress-bar-js').width('50%');
-        $('.progress-bar-html').width('55%');
-        $('.progress-bar-css').width('60%');
-        $('.progress-bar-angular').width('30%');
-        $('.progress-bar-bootstrap').width('62%');
-        $('.progress-bar-mysql').width('55%');
-        $('.progress-bar-nodejs').width('20%');
-        $('.progress-bar-git').width('30%');
-        $('.progress-bar-ux').width('45%');
-        $('.progress-bar-ps').width('50%');
-        $('.progress-bar-il').width('35%');
+        setTimeout(function(){ 
+            $('.progress-bar-js').width('50%');
+            $('.progress-bar-html').width('55%');
+            $('.progress-bar-css').width('60%');
+            $('.progress-bar-angular').width('30%');
+            $('.progress-bar-bootstrap').width('62%');
+            $('.progress-bar-mysql').width('55%');
+            $('.progress-bar-nodejs').width('20%');
+            $('.progress-bar-git').width('30%');
+            $('.progress-bar-ux').width('45%');
+            $('.progress-bar-ps').width('50%');
+            $('.progress-bar-il').width('35%');
+        }, 500);
     }, {
         offset: '55%'
     });
