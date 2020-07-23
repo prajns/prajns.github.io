@@ -13,6 +13,10 @@
         margin-top: 40px;
     }
 
+    .main-nav {
+        display: block;
+    }
+
     body {
         font-size: 18px;
     }
@@ -24,6 +28,15 @@
     section {
         padding: 60px 0;
     }
+
+    section h2 {
+        margin-bottom: 10px;
+    }
+
+    .section-about-bar, .section-skills-bar, .section-projects-bar, .section-contact-bar {
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }    
 
     .section-skills .col-square-skills .square-point {
         width: 150px;
@@ -49,6 +62,15 @@
         font-size: 110%;
     }
 
+    .contact-box-left {
+        align-items: center;
+    }
+
+    .section-contact img {
+        width: 100%;
+        height: 100%;
+    }    
+
     @-webkit-keyframes typing {
         from { width: 0 }
         to { width: 405px }
@@ -69,11 +91,26 @@
         padding: 30px 0;
     }
 
+    section h2 {
+        margin-bottom: 20px;
+    }
+
+    .section-about-bar, .section-skills-bar, .section-projects-bar, .section-contact-bar {
+        width: 275px;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
     .mobile-nav-icon {
         display: inline-block;
     }
 
+    .mobile-nav-label {
+        font-size: 200%;
+    }
+
     .main-nav {
+        display: none;
         float: left;
         margin-top: 30px;
         margin-left: 25px;
@@ -93,6 +130,26 @@
     
     .section-about h2::after {
         margin-bottom: 30px;
+    }
+
+    .card-body .card-title {
+        font-size: 100%;
+        margin-bottom: 0.25rem;
+    }
+    
+    .card-body .card-title i {
+        position: relative;
+        top: 2px;
+        left: 3px;
+    }
+    
+    .card-body .card-subtitle {
+        font-size: 95%;
+        margin-bottom: 0.1rem;
+    }
+    
+    .card-body .card-text {
+        font-size: 80%;
     }
 
     .section-skills .progress .progress-bar-label span {
@@ -145,14 +202,60 @@
 
 @media only screen and (max-width: 576px) {
 
+    section h2 {
+        margin-bottom: 10px;
+    }
+
+    .mobile-nav-label {
+        font-size: 140%;
+    }
+
+    .section-about-bar, .section-skills-bar, .section-projects-bar, .section-contact-bar {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .section-about p {
+        margin-bottom: 0;
+    }
+
+    .section-skills .progress .progress-bar-label span {
+        font-size: 80%;
+    }
+
     .section-projects .project-container {
         margin-bottom: 20px;
     }
 
-    .contact-box-left {
-        text-align: center;
-        margin-bottom: 60px;;
+    .card-body .card-title {
+        font-size: 130%;
+        margin-bottom: 0.5rem;
     }
+    
+    .card-body .card-title i {
+        position: relative;
+        top: 2px;
+        left: 3px;
+    }
+    
+    .card-body .card-subtitle {
+        font-size: 105%;
+        margin-bottom: 0.75rem;
+    }
+    
+    .card-body .card-text {
+        font-size: 100%;
+    }    
+
+    .contact-box-left {
+        justify-content: center;
+        margin-bottom: 10px;;
+    }
+
+    .section-contact img {
+        width: 75%;
+        height: auto;
+    }  
 
     .contact-box-right {
         text-align: center;

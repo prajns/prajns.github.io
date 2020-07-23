@@ -18,15 +18,20 @@
     <body>
         <header>
             <div>
-            <nav>
+            <nav class="animate__animated">
                 <div class="row justify-content-end">
-                    <ul class="main-nav js--main-nav">
-                        <li><a href="#about"><i><ion-icon name="person-sharp"></ion-icon></i> About me</a></li>
-                        <li><a href="#skills"><i><ion-icon name="school-sharp"></ion-icon></i> Skills</a></li>
-                        <li><a href="#projects"><i><ion-icon name="folder-sharp"></ion-icon></i> Projects</a></li>
-                        <li><a href="#contact"><i><ion-icon name="card-sharp"></ion-icon></i> Contact</a></li>
-                    </ul>
-                    <a class="mobile-nav-icon js--nav-icon"><i><ion-icon name="menu-outline"></ion-icon></i></a>
+                    <div class="col-md-3 col-5 mobile-nav-label">
+                        <span>Kamil Adamus</span>
+                    </div>
+                    <div class="col-md-9 col-7 d-flex justify-content-end">
+                        <ul class="main-nav js--main-nav">
+                            <li><a href="#about"><i><ion-icon name="person-sharp"></ion-icon></i> About me</a></li>
+                            <li><a href="#skills"><i><ion-icon name="school-sharp"></ion-icon></i> Skills</a></li>
+                            <li><a href="#projects"><i><ion-icon name="folder-sharp"></ion-icon></i> Projects</a></li>
+                            <li><a href="#contact"><i><ion-icon name="card-sharp"></ion-icon></i> Contact</a></li>
+                        </ul>
+                        <a class="mobile-nav-icon js--nav-icon"><i><ion-icon name="menu-outline"></ion-icon></i></a>
+                    </div>
                 </div>
             </nav>
 
@@ -176,7 +181,9 @@
                 </div>
                 <div class="col-md-4 col-square col-square-skills js--wp-5b">
                     <div class="square-point">
-                        <i class="animate__animated" id="skill-image"></i>
+                        <div id="square-point-body">
+                            <i class="animate__animated" id="skill-image"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -186,10 +193,10 @@
         <section class="section-projects" id="projects">
 
             <h2 class="js--wp-6a">Projects</h2>
-            <div class="section-about-bar js--wp-6b"></div>
+            <div class="section-projects-bar js--wp-6b"></div>
 
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-4 mb-4 js--wp-7a js--wp-8a">
+                <div class="col-12 col-sm-6 col-lg-4 mb-4 js--wp-7a js--wp-8a">
                     <div class="card" data-project="pr--ux">
                         <img class="card-img-top animate__animated" src="resources/img/pr--ux.jpg">
                         <div class="card-body animate__animated">
@@ -204,7 +211,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 mb-4 js--wp-7a js--wp-8b">
+                <div class="col-12 col-sm-6 col-lg-4 mb-4 js--wp-7a js--wp-8b">
                     <div class="card" data-project="pr--gamebets">
                         <img class="card-img-top animate__animated" src="resources/img/pr--gamebets.jpg">
                         <div class="card-body animate__animated">
@@ -218,7 +225,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 mb-4 js--wp-7a js--wp-8c">
+                <div class="col-12 col-sm-6 col-lg-4 mb-4 js--wp-7a js--wp-8c">
                     <div class="card" data-project="pr--wbmm">
                         <img class="card-img-top animate__animated" src="resources/img/pr--wbmm.jpg">
                         <div class="card-body animate__animated">
@@ -236,7 +243,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 mb-4 js--wp-7b js--wp-8d">
+                <div class="col-12 col-sm-6 col-lg-4 mb-4 js--wp-7b js--wp-8d">
                     <div class="card" data-project="pr--saper">
                         <img class="card-img-top animate__animated" src="resources/img/pr--saper.jpg">
                         <div class="card-body animate__animated">
@@ -251,7 +258,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 mb-4 js--wp-7b js--wp-8e">
+                <div class="col-12 col-sm-6 col-lg-4 mb-4 js--wp-7b js--wp-8e">
                     <div class="card" data-project="pr--snake">
                         <img class="card-img-top animate__animated" src="resources/img/pr--snake.jpg">
                         <div class="card-body animate__animated">
@@ -266,7 +273,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 mb-4 js--wp-7b js--wp-8f">
+                <div class="col-12 col-sm-6 col-lg-4 mb-4 js--wp-7b js--wp-8f">
                     <div class="card" data-project="pr--notes">
                         <img class="card-img-top animate__animated" src="resources/img/pr--notes.jpg">
                         <div class="card-body animate__animated">
@@ -281,7 +288,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 mb-4 offset-lg-4 js--wp-7c js--wp-8g">
+                <div class="col-12 col-sm-6 col-lg-4 mb-4 offset-lg-4 js--wp-7c js--wp-8g">
                     <div class="card" data-project="pr--ftfw">
                         <img class="card-img-top animate__animated" src="resources/img/pr--ftfw.jpg">
                         <div class="card-body animate__animated">
@@ -305,7 +312,7 @@
 
         <section class="section-contact" id="contact">
             <h2 class="js--wp-9a">Contact</h2>
-            <div class="section-about-bar js--wp-9b"></div>
+            <div class="section-contact-bar js--wp-9b"></div>
             <div class="row">
                 <div class="col-12 col-sm-6 contact-box-left js--wp-10">
                     <img src="resources/img/avatar--nobackground.png" alt="My portrait">

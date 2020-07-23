@@ -53,6 +53,16 @@ section:nth-of-type(even) {
     background-image: url(./img/pixel--weave__solid.png); 
 }
 
+.section-about-bar, .section-skills-bar, .section-projects-bar, .section-contact-bar {
+    display: block;
+    height: 3px;
+    background-color: #159957;
+    content: "";
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
 /* ------------------------------------------------------------------------------------------------------------- */
 /* HEADINGS */
 /* ------------------------------------------------------------------------------------------------------------- */
@@ -76,7 +86,7 @@ section h2 {
     font-weight: 600;
     color: #333;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     letter-spacing: 6px;
     text-shadow: 3px 3px 0px rgba(0,0,0,0.3);
 }
@@ -122,7 +132,6 @@ nav {
 
 .main-nav li {
     display: inline-block;
-    margin-left: 40px;
 }
 
 .main-nav li a i {
@@ -167,6 +176,13 @@ nav {
 }
 
 /* Mobile navi */
+
+.mobile-nav-label {
+    display: flex; 
+    align-items: center;
+    font-size: 120%;
+    color: #fff;
+}
 
 .mobile-nav-icon {
     float: right;
@@ -404,15 +420,8 @@ header>div {
 /* ABOUT ME */
 /* ------------------------------------------------------------------------------------------------------------- */
 
-.section-about-bar {
-    display: block;
-    height: 3px;
-    background-color: #159957;
-    content: "";
+.section-about-bar {    
     width: 400px;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 100px;
 }
 
 .section-about .row {
@@ -445,7 +454,7 @@ header>div {
     box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.3);
 }
 
-.square-point i {
+.section-about .square-point i {
     display: flex;
     font-size: 400%;
     transform: rotate(-45deg);
@@ -457,14 +466,7 @@ header>div {
 /* ------------------------------------------------------------------------------------------------------------- */
 
 .section-skills-bar {
-    display: block;
-    height: 3px;
-    background-color: #159957;
-    content: "";
     width: 300px;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 100px;
 }
 
 .section-skills .progress {
@@ -500,6 +502,10 @@ header>div {
     transition: all 1s;
 }
 
+#square-point-body {
+    transform: rotate(-45deg);
+}
+
 #skill-image {
     transition: all 0.2s;
 }
@@ -513,9 +519,9 @@ header>div {
     background-image: url('../img/logos/logo-library.svg');
     display: block;
     text-indent: -9999px;
-    width: 100px;
-    height: 100px;
-    background-size: 100px 100px;
+    width: 85px;
+    height: 85px;
+    background-size: 85px 85px;
     transition: all 0.2s;
 }
 
@@ -524,14 +530,7 @@ header>div {
 /* ------------------------------------------------------------------------------------------------------------- */
 
 .section-projects-bar  {
-    display: block;
-    height: 3px;
-    background-color: #159957;
-    content: "";
     width: 400px;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 100px;
 }
 
 .card {
@@ -549,6 +548,7 @@ header>div {
 .card-body {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     display: none;
     position: absolute;
     background-color: #333;
@@ -626,25 +626,18 @@ header>div {
 /* ------------------------------------------------------------------------------------------------------------- */
 
 .section-contact-bar {
-    display: block;
-    height: 3px;
-    background-color: #159957;
-    content: "";
     width: 350px;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 100px;
 }
 
 .contact-box-left {
     display: flex;
     justify-content: flex-end;
     padding-right: 3%;
-
 }
 
 .section-contact img {
     width: 75%;
+    height: auto;
 }
 
 .contact-box-right {
