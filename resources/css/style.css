@@ -117,6 +117,15 @@ a:visited {
     transition: color 0.2s;
 }
 
+nav a:link,
+nav a:visited
+{
+    font-size: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    color: #fff;
+}
+
 a:hover,
 a:active {
     color: #fff;
@@ -132,6 +141,7 @@ nav {
 
 .main-nav li {
     display: inline-block;
+    margin-right: 20px;
 }
 
 .main-nav li a i {
@@ -344,7 +354,7 @@ header>div {
 }
   
 .header-menu .header-menu-list .header-menu-list-item:hover {
-    background-color: white;
+    background-image: url(./img/pixel--weave__solid.png); 
 }
 
 .header-menu .header-menu-list .header-menu-list-item:nth-child(1) {
@@ -458,7 +468,6 @@ header>div {
     display: flex;
     font-size: 400%;
     transform: rotate(-45deg);
-    color: #333;
 }
 
 /* ------------------------------------------------------------------------------------------------------------- */
@@ -683,6 +692,20 @@ header>div {
     color: #333;
 }
 
+.navigate-top {
+    margin-top: 40px;
+    font-size: 200%;
+}
+
+.navigate-top ion-icon {
+    transition: 0.2s all;
+}
+
+.navigate-top ion-icon:hover {
+    cursor: pointer;
+    color: rgba(0,0,0,0.5);
+}
+
 /* ------------------------------------------------------------------------------------------------------------- */
 /* FOOTER */
 /* ------------------------------------------------------------------------------------------------------------- */
@@ -694,14 +717,14 @@ footer {
 }
 
 footer p {
-    margin: 1rem;
+    margin: 0.5rem;
     display: inline-block;
 }
 
 footer a:link,
 footer a:visited {
     color: #777;
-    margin: 0 4px;
+    margin: 0 2px;
     font-size: 100%;
 }
 

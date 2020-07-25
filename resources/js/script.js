@@ -10,7 +10,7 @@ $(document).ready(function() {
       offset: '60px;'
     });
 
-    $('.js--scroll-header').click(function () {
+    $('.navigate-top ion-icon').click(function () {
         $('html, body').animate({scrollTop: $('header').offset().top}, 1000); 
     });
 
@@ -82,13 +82,13 @@ $(document).ready(function() {
     $('.js--wp-3a').waypoint(function(direction) {
         $('.js--wp-3a').addClass('animate__animated animate__fadeIn');
     }, {
-        offset: '65%'
+        offset: '67%'
     });
 
     $('.js--wp-3b').waypoint(function(direction) {
         $('.js--wp-3b').addClass('animate__animated animate__fadeInRight');
     }, {
-        offset: '65%'
+        offset: '67%'
     });
 
     $('.js--wp-4a').waypoint(function(direction) {
